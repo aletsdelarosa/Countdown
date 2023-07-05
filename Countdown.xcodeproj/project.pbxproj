@@ -11,6 +11,8 @@
 		953654D32A560120005BB9C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953654D22A560120005BB9C3 /* ContentView.swift */; };
 		953654D52A560121005BB9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953654D42A560121005BB9C3 /* Assets.xcassets */; };
 		953654D82A560121005BB9C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953654D72A560121005BB9C3 /* Preview Assets.xcassets */; };
+		95C771132A56024C006D52FB /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C771122A56024C006D52FB /* Countdown.swift */; };
+		95C771162A56030C006D52FB /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C771152A56030C006D52FB /* CountdownViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		953654D22A560120005BB9C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		953654D42A560121005BB9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953654D72A560121005BB9C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95C771122A56024C006D52FB /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		95C771152A56030C006D52FB /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		953654CF2A560120005BB9C3 /* Countdown */ = {
 			isa = PBXGroup;
 			children = (
+				95C771142A5602FE006D52FB /* ViewModels */,
+				95C771112A560240006D52FB /* Views */,
 				953654D02A560120005BB9C3 /* CountdownApp.swift */,
 				953654D22A560120005BB9C3 /* ContentView.swift */,
 				953654D42A560121005BB9C3 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				953654D72A560121005BB9C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95C771112A560240006D52FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95C771122A56024C006D52FB /* Countdown.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95C771142A5602FE006D52FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				95C771152A56030C006D52FB /* CountdownViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C771162A56030C006D52FB /* CountdownViewModel.swift in Sources */,
 				953654D32A560120005BB9C3 /* ContentView.swift in Sources */,
 				953654D12A560120005BB9C3 /* CountdownApp.swift in Sources */,
+				95C771132A56024C006D52FB /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

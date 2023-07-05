@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = CountdownViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                DatePicker("Select a Date", selection: $viewModel.date)
+                    .padding()
+                
+                Spacer()
+                
+                Countdown(viewModel: viewModel)
+                
+                Spacer()
+                
+            }
+            .navigationTitle("Countdown")
         }
-        .padding()
+        
     }
 }
 
